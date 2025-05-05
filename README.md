@@ -1,8 +1,8 @@
  # EXPERIMENT--06-INTERFACING-DIGITAL-SENSOR-ON-RASPBERRY-PI-DEVELOPMENT-BOARD-
-### NAME
-### ROLL NO:
-### DEPARTMENT 
-### DATE
+### NAME:KISHOR K R
+### ROLL NO:212224110032
+### DEPARTMENT: CSE(IOT)
+### DATE:05/05/2025
 
 ### AIM
 interface the DHT11 digital temperature and humidity sensor with a Raspberry Pi development board and display real-time data.
@@ -53,7 +53,7 @@ To be able to easily communicate with some sensors, CircuitPython has been devel
 Open a terminal window and write following commands:
 
 In our case, it is really important to use the latest version of Raspberry Pi OS ! Even if it takes some time, do not skip the next step !
-
+```
 sudo apt update
 sudo apt full-upgrade
 sudo apt install python3-pip
@@ -64,24 +64,22 @@ Then install and run a script developed by Adafruit :
 sudo pip3 install --upgrade adafruit-python-shell
 wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py
 sudo python3 raspi-blinka.py
+```
 The script will probably ask you to update your python version to Version 3. Choose : y
  
  
  Install the CircuitPython-DHT Library
 Open a terminal window and write following commands:
-
+```
 pip3 install adafruit-circuitpython-dht
 sudo apt-get install libgpiod2
-
+```
 
 open thonny python and writhe the python script as shown below 
 
 
 ### PYTHON SCRIPT 
- 
-`
-
-
+ ```
 import time
 import board
 import adafruit_dht
@@ -104,17 +102,17 @@ while True:
         sensor.exit()
         raise error
     time.sleep(2.0)`
+```
 
+## OUTPUT
+## 1.circuit diagram
 
+![Screenshot 2025-05-05 205507](https://github.com/user-attachments/assets/31ca7572-9008-4ea5-905c-fcdfe486c9f4)
 
+## 2.sensor readings
 
+![Screenshot 2025-05-05 205523](https://github.com/user-attachments/assets/585ffe0c-6730-4f8e-9b78-8b30fd1e7916)
 
-
-## SCREENSHOT OF THE OUPT AND CIRCUIT 
-
-
-
-
-    
+  
 ## RESULT:
 The DHT11 temperature and humidity sensor was successfully interfaced with the Raspberry Pi, and real-time data was retrieved and displayed.
